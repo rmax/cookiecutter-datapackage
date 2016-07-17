@@ -1,10 +1,12 @@
 {
     "full_name": "Your name",
     "email": "Your address email (eq. you@example.com)",
+    "datapackage_name": "Name of the datapackage",
+    "datapackage_slug": "{{ cookiecutter.datapackage_name.lower().replace(' ', '-') }}",
+    "datapackage_short_desc": "A short description of the datapackage",
+    "datapackage_keywords": "",
     "github_username": "Your github username",
-    "project_name": "Name of the project",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-    "project_short_description": "A short description of the project",
+    "github_slug": "{{ cookiecutter.datapackage_slug }}",
     "release_date": "{% now 'local' %}",
     "version": "0.1.0",
     "_extensions": ["jinja2_time.TimeExtension"]

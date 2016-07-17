@@ -1,0 +1,21 @@
+{
+  "name": "{{ cookiecutter.datapackage_slug }}",
+  "title": "{{ cookiecutter.datapackage_name }}",
+  "author": "{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>",
+  "homepage": "https://github.com/{{ cookiecutter.github_username }}/{{cookiecutter.github_slug }}",
+  "keywords": [
+  {%- for kw in cookiecutter.datapackage_keywords.split() %}
+    "{{ kw }}"{% if not loop.last %}, {% endif %}
+  {%- endfor %}
+  ],
+  "version": "{{ cookiecutter.version }}",
+  "license": "PDDL-1.0",
+  "sources": [{
+    "name": "{{ cookiecutter.datapackage_name }} Source",
+    "web": "http://data.source.web"
+  }],
+  "resources": [{
+    "name": "{{ cookiecutter.datapackage_slug }}",
+    "path": "data/{{ cookiecutter.datapackage_slug }}.csv"
+  }]
+}

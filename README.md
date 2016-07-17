@@ -1,7 +1,7 @@
 cookiecutter-datapackage
 ========================
 
-A cookiecutter template for creating data packages.
+A cookiecutter template for creating [data packages][dp].
 
 Requirements
 ------------
@@ -14,3 +14,5 @@ Generate a new Cookiecutter template layout: `cookiecutter gh:rolando/cookiecutt
 License
 -------
 This project is licensed under the terms of the [MIT License](/LICENSE)
+
+[dp]: http://specs.frictionlessdata.io/data-packages/
